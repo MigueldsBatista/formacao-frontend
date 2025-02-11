@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário HTML</h2>
+    <form action="#" method="post">
+<div>
+    <!--Nome e label-->
+    <label for="nome">Nome:</label>
+    <input  type="text" name="nome" id="name">
+
+    <label for="idade">Idade:</label>
+    <input type="text" name="idade" id="age">
+</div>
+    <!--Select -->
+
+    <div>
+        <label for="job">Gênero</label>
+        <select name="job">
+            
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+        </select>
+</div>
+<div>
+<!--Default value for select-->
+    <label for="contract">Você leu os termos do contrato?</label>
+    <select name="sim" >
+        <option value="sim">Sim</option>
+        <option value="nao" selected>Não</option>
+    </select>
+
+</div>
+<!--Multiplos selectes-->
+<div>
+    <label for="items">Selecione os items desejados></label><select multiple name="items" id="">
+        <option value="pera">Pera</option>
+        <option value="feijao">Feijão</option>
+        <option value="maca">Maça</option>
+    </select>
+</div>
+
+<div>
+    <label for="comment">Comentário: </label>
+    <textarea name="comment"></textarea>
+</div>
+
+<!--Fieldset e Legend-->
+<div>
+    <fieldset>
+        <legend>Preencha suas informações</legend>
+        <label for="fname">Nome:</label>
+        <input type="text" name="fname">
+        <label for="lname">Sobrenome:</label>
+        <input type="text" name="fname">
+    </fieldset>
+</div>
+
+<!--Datalist-->
+
+<div>
+    <label for="flavor">Escolha o sabor:</label>
+    <input type="text" list="flavors" name="flavor">
+    <datalist id="flavors">
+        <option value="Cereja"></option>
+        <option value="Morango"></option>
+        <option value="Abacaxi"></option>
+        <option value="Chocolate"></option>
+    </datalist>
+</div>
+
+<!--Input radio-->
+<div>
+    <label for="model">Escolha o modelo do seu carro:</label>
+    <div class="radio">
+        <input type="radio" name="car-model" value="bmw">
+        <label for="bmw">BMW</label>
+    </div>
+    
+    <div class="radio">
+        <input type="radio" name="car-model" value="ferrari">
+        <label for="ferrari">ferrari</label>
+    </div>
+
+    <div class="radio">
+        <input type="radio" name="car-model" value="byd">
+        <label for="byd">BYD</label>
+    </div>
+
+</div>
+
+
+<!--Input checkbox-->
+
+<div>
+    <label for="model">Escolha os opcionais do seu carro:</label>
+    <div class="checkbox">
+        <input type="checkbox" name="optionals[]" value="turbo">
+        <label for="turbo">Turbo</label>
+    </div>
+    
+    <div class="checkbox">
+        <input type="checkbox" name="optionals[]" value="big-tires">
+        <label for="big-tires">Pneus grandes</label>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" name="optionals[]" value="solar-roof">
+        <label for="solar-roof">Teto solar</label>
+    </div>
+
+</div>
+
+<!--Input de data-->
+<div>
+    <label for="bday">Data de nascimento:</label>
+    <input type="date" name="bday">
+</div>
+
+<div>
+    <label for="image">Insira sua imagem:</label>
+    <input type="file" name="image">
+</div>
+<!--Numeros-->
+<div>
+    <label for="salary">Digite seu salário:</label>
+    <input type="number" name="salary">
+</div>
+<!--Value-->
+
+<div>
+    <label for="valor">Digite algum valor:</label>
+    <input type="text" value="Programador" name=""valor>
+</div>
+
+<!--Disabled-->
+<div>
+    <p>Tente mudar o valor</p>
+    <input type="text" value="Não precisa preencher" disabled>
+</div>
+
+<!--Placeholder-->
+<div>
+    <label for="current-job">Digite a sua profissão</label>
+    <input type="text" name="current-job" placeholder="Ex: programador">
+</div>
+
+<!--Required-->
+<div>
+    <label for="bday-year">Digite seu ano de nacimento:</label>
+    <input type="date" name="bday-year" placeholder="Digite o ano que você nasceu" required>
+</div>
+<!--Senha-->
+
+<div>
+    <label for="email">Digite seu email:</label>
+    <input type="email" name="email">
+</div>
+<div>
+    <label for="password">Digite sua senha:</label>
+    <input type="password" name="password">
+</div>
+
+<input type="reset" value="Limpar">
+<!--Envio de form-->
+<input type="submit" password value="Enviar"> 
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: lato;
+ }
+
+ body {
+  background-color: #090e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-height: 100vh;
+  
+ }

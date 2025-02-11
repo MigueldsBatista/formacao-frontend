@@ -1,0 +1,389 @@
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: green;
+}
+
+.paragraph{
+    color: red;
+}
+
+#exclusive-title{
+    color: blue;
+}
+
+h2{
+    color: yellow;
+border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    color: green;
+}
+
+.title{
+    color: red;
+}
+
+.color-name{
+    color:tomato;
+}
+
+.simple-hex{
+    color: #123; /* equals to => 112233 */
+}
+
+/* HSL hue-saturation-lightness */
+.hsl{
+    color: hsl(120, 100%, 50%);
+}
+
+.bg{
+    color:#123;
+    background-color: rgb(255, 0, 125);
+}
+
+.bg-opacity{
+    background-color: green;
+    opacity: 0.5;
+}
+.rgba-opacity{
+    background-color: green;
+    opacity: 0.5;
+}
+
+.background-image{
+    background-image: url('../img/nature.jpg');
+    color: white; 
+}
+
+.not-centered,
+.centered{
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/nature.jpg');
+}
+
+.centered{
+    background-position: center;
+    background-size: cover;
+}
+
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2{
+    height: 300px;
+    /* width: 100% por padrao */
+    background-color: #333;
+}
+.text-without-padding,
+.text-with-padding{
+    background-color: #333;
+    color: white;
+}
+
+.text-with-padding{
+    padding: 10px;
+}
+
+.padding-individual{
+    color: #fff;
+    background-color: #222;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+
+}
+
+.shorthand-padding{
+    color: #fff;
+    background-color: #111;
+    padding: 5px 20px  40px   10px;
+          /* top right bottom left */
+}
+
+.shorthand-padding{
+    color: #fff;
+    background-color: #111;
+    padding: 10px 20px;
+    /* top-bottom right-left */
+    /* padding: 10px 20px 10px 20px; */
+}
+
+.without-border-box{
+    color: #fff;
+    background-color: #444;
+    width: 400px;
+    padding: 50px;
+    /*Em um layout de ate 450px, o padding de 50px faz com que o elemento tenha 500px de largura 
+    Ou seja, fora do layout */
+}
+
+.with-border-box{
+    color: #fff;
+    background-color: #555;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+    /* O box-sizing: border-box; faz com que o padding seja contabilizado dentro do width */
+}
+
+.border{
+    color: #fff;
+    background-color: #666;
+    width: 400px;
+    padding: 50px;
+    border: 10px solid #333;
+}
+
+.border-2{
+    color: #fff;
+    background-color: #777;
+    width: 400px;
+    padding: 50px;
+    border: 10px dotted #333;
+}
+
+.border-bottom{
+    color: #fff;
+    background-color: #888;
+    width: 400px;
+    padding: 50px;
+    border-bottom: 10px solid #333;
+}
+
+.border-radius{
+    color: #fff;
+    background-color: #999;
+    width: 400px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.margin{
+    color: #fff;
+    background-color: #aaa;
+    width: 400px;
+    margin: 50px;
+}
+
+.margin-top{
+    color: #fff;
+    background-color: #bbb;
+    width: 400px;
+    margin-top: 50px;
+}
+.margin-shorthand{
+    color: #fff;
+    background-color: #ccc;
+    width: 400px;
+    margin: 50px 20px;
+}
+
+.box-model{
+    color: #000;
+    background-color: #ddd;
+    width: 400px;
+    padding: 50px;
+    border: 10px solid #333;
+    margin: 50px;
+}
+
+.text-aligned{
+    text-align: right;
+}
+
+.container-center{
+    text-align: center;
+}
+
+.decorated-text{
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+.spacing{
+    letter-spacing: 5px;
+}
+
+.font{
+    color: #000;
+    font-size: 30px;
+}
+.serif{
+font-family: Georgia;
+}
+
+.sans-serif{
+    font-family: Helvetica;
+}
+
+.monospace{
+    font-style: "Courier New";
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.thin, .bold, .bolder{
+    font-family: Helvetica;
+
+}
+
+.thin{
+    font-weight: lighter;
+}
+
+.bold{
+font-weight: bold;
+}
+
+.small{
+    font-size: 40px;
+}
+
+.big{
+    font-size: 78px;
+}
+
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.block{
+display: block;
+margin-bottom: 5px;
+background-color: rgb(77, 190, 119);
+}
+
+
+.invisible{
+    display: none;
+}
+
+
+
+.static{
+    position: static;
+    background-color: #391;
+    width: 100px;
+    height: 100px;
+}
+
+.relative{
+    position: relative;
+    background-color: #224;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+.absolute{
+    position: absolute;
+    background-color: #964;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+
+}
+.absolute1, .absolute2{
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    position: absolute;
+}
+
+.absolute1{
+    top: 10px;
+    left: 70px;
+}
+
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    position: fixed;
+    top: 50px;
+    right: 100px;;
+}
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #821;
+    border: 1px solid blue;
+    position: sticky;
+    top: 50px;
+    right: 100px;;
+}
+
+.absolute3, .absolute4, .absolute5{
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    position: absolute;
+}
+
+.absolute3{
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    z-index: 1;
+}
+
+.absolute4{
+    top: 30px;
+    left: 30px;
+    background-color: green;
+    z-index: 2;
+
+}
+.absolute5{
+    top: 60px;
+    left: 60px;
+    background-color: blue;
+    z-index: 3;
+}
+
+.main-paragraph{
+    font-style: italic;
+}
+

@@ -1,0 +1,20 @@
+body{
+    padding-bottom: 500px;
+}
+div input,
+div label {
+    display: block;
+    /*Garante que os elementos fiquem um abaixo do outro*/
+}
+div {
+    margin-bottom: 10px;
+    /*
+    garante que haja um espaço entre os elementos do formulario nesse caso
+    */
+}
+
+.radio label,
+.radio input,
+.radio span{
+  display: inline-block;  
+}

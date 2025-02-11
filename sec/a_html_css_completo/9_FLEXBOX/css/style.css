@@ -1,0 +1,186 @@
+/* Basic Flexbox Container */
+.flex{
+    display: flex;
+    flex-direction: row; /* Default direction is row */
+    background-color: #ddd;
+}
+
+/* Flexbox Container with Column Direction */
+.flex-column{
+    display: flex;
+    flex-direction: column; /* Items are arranged in a column */
+    background-color: #ccc;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+}
+
+/* Flexbox Container with Wrap */
+.flex-wrap{
+    background-color: #aaa;
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+}
+
+/* Flexbox Item */
+.box{
+    border: 1px solid red;
+    height: 40px;
+    width: 33%; /* Takes up 33% of the container's width */
+}
+
+/* Centered Flexbox Container */
+.center{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center; /* Centers items horizontally */
+}
+
+.center .box, 
+.space-around .box, 
+.space-between .box, 
+.end .box{
+    width: 50px; /* Sets width of items in specific containers */
+}
+
+/* Flexbox Containers with Different Justifications */
+.space-around, .space-between, .end{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.space-around{
+    justify-content: space-around; /* Distributes items with space around them */
+}
+
+.space-between{
+    justify-content: space-between; /* Distributes items with space between them */
+}
+
+.end{
+    justify-content: flex-end; /* Aligns items to the end of the container */
+}
+
+/* Flexbox Containers with Different Alignments */
+.align-center .box, 
+.align-end .box, 
+.align-stretch .box{
+    width: 50px; /* Sets width of items in specific containers */
+}
+
+.align-center , 
+.align-end , 
+.align-stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center{
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+}
+
+.align-end{
+    align-items: flex-end; /* Aligns items to the bottom of the container */
+}
+
+.align-stretch{
+    align-items: stretch; /* Stretches items to fill the container's height */
+}
+
+.align-stretch .box{
+    height: auto; /* Allows items to stretch */
+}
+
+/* Flexbox Container with Gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    justify-content: center; /* Centers items horizontally */
+    border: 1px solid green;
+    gap: 10px; /* Adds space between items */
+}
+
+.gap .box{
+    width: 32%; /* Takes up 32% of the container's width */
+}
+
+/* Flexbox Container with Order */
+.order{
+    display: flex;
+}
+
+#item1{
+    order:1 ; /* Sets the order of the item */
+}
+
+#item2{
+    order:2 ; /* Sets the order of the item */
+}
+
+#item3{
+    order:3 ; /* Sets the order of the item */
+}
+
+/* Flexbox Container with Grow */
+.grow{
+    display: flex;
+    border: 1px solid red;
+}
+
+.grow .box{
+    flex: 1; /* Allows items to grow equally */
+}
+
+.grow .big{
+    flex-grow: 2; /* Allows this item to grow twice as much as others */
+}
+
+/* Flexbox Container with Basis */
+.basis{
+    display: flex;
+    border: 1px solid red;
+}
+
+.basis .box{
+    flex-basis: 20px; /* Sets the initial size of the item */
+    /* Determines the base size of the element */
+}
+.shrink{
+    display: flex;
+    border: 1px solid red;
+}
+.shrink .box{
+    flex-shrink: 1; /* Allows items to shrink equally */
+    flex-basis: 250px; /* Sets the initial size of the item */
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2; /* Allows this item to shrink twice as much as others */
+}
+
+.short-hand{
+    display: flex;
+    border: 1px solid red;
+}
+.short-hand .box{
+    width: auto;
+    flex: 1 1 50px; /* flex-grow, flex-shrink, flex-basis */
+}
+
+.short-hand .diff{
+    flex: 1 3 400px; /* flex-grow, flex-shrink, flex-basis */
+}
+
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end; /* Aligns items to the bottom of the container */
+    border: 1px solid purple;
+}
+
+.auto-alignment .diff{
+    align-self: center; /* Aligns this item to the center */
+}

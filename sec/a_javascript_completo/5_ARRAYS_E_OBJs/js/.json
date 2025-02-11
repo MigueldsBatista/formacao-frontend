@@ -1,0 +1,6 @@
+{
+    "name" : "André",
+    "age" : 36,
+    "email" : "miguel.email.com",
+    "courses" : ["JavaScript", "HTML", "CSS"]
+}
