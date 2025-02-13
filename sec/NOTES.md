@@ -80,3 +80,9 @@ Estruturas de Dados e Algoritmos com JavaScript
 Todos eles complementam o conteúdo de alguma forma, fazendo você evoluir mais rápido
 
 São focados em JavaScript, que é a linguagem base da Formação Front-end
+
+
+##Pra clonar uma pasta especifica como
+ https://github.com/matheusbattisti/countdown/tree/main
+usamos
+git clone htt

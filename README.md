@@ -3,8 +3,11 @@
 Este repositório contém recursos, projetos e anotações para o aprendizado e prática de desenvolvimento frontend. Aqui você encontrará exercícios e aplicações desenvolvidas com **HTML, CSS, JavaScript e React**, cobrindo conceitos essenciais para criar interfaces modernas e dinâmicas.
 
 ---
+## Visão Geral dos Projetos React
 
-## 🖼️ Visão Geral dos Projetos  
+## React quiz
+
+## 🖼️ Visão Geral dos Projetos Javascript  
 
 ### 📌 [DevNotes – Aplicativo de Anotações ](sec/a_javascript_completo/20_DEVNOTES)
 <img src="sec/a_javascript_completo/20_DEVNOTES/public%20media/image.png" alt="DevNotes Project View" width="500">

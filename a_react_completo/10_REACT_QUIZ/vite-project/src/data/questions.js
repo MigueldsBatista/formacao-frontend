@@ -30,6 +30,7 @@ const data = [
     options: ["qty", "length", "items", "index"],
     answer: "length",
   },
+
 ];
 
 export default data;
