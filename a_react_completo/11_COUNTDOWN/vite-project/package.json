@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -27,6 +29,6 @@
     "globals": "^15.14.0",
     "vite": "^6.1.0"
   },
-  "homepage": "https://seu-usuario.github.io/seu-repositorio"
+  "homepage": "https://MigueldsBatista.github.io/formacao-frontend/a_react_completo/11_COUNTDOWN/vite-project/"
 
 }
